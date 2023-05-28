@@ -1,4 +1,4 @@
-# Moovie-recommendor-system
+# Movie-recommendor-system
 Dataset link- https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata?select=tmdb_5000_movies.csv
 
 The first dataset contains the following features:-
