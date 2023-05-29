@@ -32,17 +32,17 @@
 ** DATA PREPROCESSING **
 
 Both dataset are merged and then data preprocessing is done :
-- 1 Converted string of list into list by literal eval 
+- Converted string of list into list by literal eval 
 - (The literal_eval() function is a useful tool in Python for safely evaluating and executing Python expressions or literals from a string. It is part of the ast (Abstract Syntax Trees) module and provides a secure way to evaluate strings containing valid Python literals such as numbers, strings, tuples, lists, dictionaries, and booleans.The primary purpose of literal_eval() is to parse and evaluate simple Python expressions without executing potentially harmful or arbitrary code. )
-- 2  Converted string of list into dict and taking only the name of genres.
-- 3  Extracted first 3 crew members and keeping only name of director.
-- 4  Concatenating genres, title,	overview,	keywords,	cast,	crew  into tags.
-- 5  So dataframe df1 has 'movie_id','title','tags'.
-- 6 Count vectorizer is applied to tags column.
+-  Converted string of list into dict and taking only the name of genres.
+-  Extracted first 3 crew members and keeping only name of director.
+-  Concatenating genres, title,	overview,	keywords,	cast,	crew  into tags.
+-  So dataframe df1 has 'movie_id','title','tags'.
+-  Count vectorizer is applied to tags column.
 - (The CountVectorizer class takes a set of text documents as input and transforms them into a sparse matrix representation, where each row corresponds to a document, and each column represents a specific word or token. The matrix values indicate the frequency of each token in each document)
-- 7 Stemming is done to the words of tags.
+-  Stemming is done to the words of tags.
 - (The goal of stemming is to simplify the analysis of text data by reducing words to a common form. This helps in tasks like information retrieval, text mining, and document classification, where variations of words with the same stem are treated as the same word)
-- 8 Cosine similarity is applied to vectors to find similarity.
+-  Cosine similarity is applied to vectors to find similarity.
 - (Cosine similarity is a measure of similarity between two non-zero vectors in a multi-dimensional space. It is widely used in various applications, including information retrieval, text mining, recommendation systems, and clustering.)
 - Similarity matrix is obtained whoose elements are arrange according to the similarity value (not similar-0, similar-1)
 - Function is made which return the top 5 similar movies from similarity matrix.
