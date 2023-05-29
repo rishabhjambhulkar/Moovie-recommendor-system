@@ -44,5 +44,5 @@ Both dataset are merged and then data preprocessing is done :
 (The goal of stemming is to simplify the analysis of text data by reducing words to a common form. This helps in tasks like information retrieval, text mining, and document classification, where variations of words with the same stem are treated as the same word)
 8 Cosine similarity is applied to vectors to find similarity.
 (Cosine similarity is a measure of similarity between two non-zero vectors in a multi-dimensional space. It is widely used in various applications, including information retrieval, text mining, recommendation systems, and clustering.)
-9 Similarity matrix is obtained whoose elements are arrange according to the similarity value (not similar-0, similar-1)
-10 Function is made which return the top 5 similar movies from similarity matrix.
+- Similarity matrix is obtained whoose elements are arrange according to the similarity value (not similar-0, similar-1)
+- Function is made which return the top 5 similar movies from similarity matrix.
